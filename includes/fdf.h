@@ -6,7 +6,7 @@
 /*   By: pchambon <pchambon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/21 13:55:06 by pchambon          #+#    #+#             */
-/*   Updated: 2019/04/04 12:08:34 by pchambon         ###   ########.fr       */
+/*   Updated: 2019/03/26 15:04:36 by pchambon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,11 @@
 
 typedef	struct	s_mlx
 {
+	void			*para_ptr;
+	void			*iso_ptr;
 	void			*mlx_ptr;
 	void			*win_ptr;
+	int				kill;
 	int				len;
 	int				lar;
 }				t_mlx;
